@@ -1,0 +1,11 @@
+.nav{
+    background-color: var(--color-bg);
+}
+
+.navlink{
+    color:var(--color-primary-variant) !important;
+}
+
+.navlink:focus{
+    color: var(--color-light) !important;
+}
