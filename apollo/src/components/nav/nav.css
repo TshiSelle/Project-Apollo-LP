@@ -1,0 +1,40 @@
+header a img {
+  width: 20%;
+  height: 20%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background: var(--color-secondary);
+}
+
+.nav__items {
+  list-style: none;
+}
+
+.nav__items li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav__items li a {
+  transition: var(--transition);
+  color: var(--color-white);
+}
+
+.nav__items li a:hover {
+  transition: var(--transition);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.nav__items li a.active {
+  color: var(--color-primary);
+}
+
+.nav-toggle {
+  display: none;
+}

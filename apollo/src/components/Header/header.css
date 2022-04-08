@@ -1,1 +1,12 @@
+.container {
+  background-image: url('../../assets/headerImage.webp');
+  width: auto;
+}
 
+.title h1 {
+  color: var(--color-primary);
+}
+
+.header__definition p {
+  color: var(--color-white);
+}

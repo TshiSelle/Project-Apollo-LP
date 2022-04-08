@@ -1,17 +1,17 @@
 import React from 'react';
-import MyNavbar from './components/Nav/mynavbar';
-import Header from './components/Header/Header';
-import Features from './components/Features/Features';
-import Footer from './components/Footer/Footer';
-import Contact from './components/ContactUs/Contact';
-import CTA from './components/CTA/CTA';
-import About from './components/About/About';
+import MyNavbar from './components/nav/Nav';
+import Header from './components/header/Header';
+import Features from './components/features/Features';
+import Footer from './components/footer/Footer';
+import Contact from './components/contact/Contact';
+import CTA from './components/cta/CTA';
+import About from './components/about/About';
 
 const App = () => {
   return (
     <>
-      <MyNavbar />;
-      <Header />;
+      <MyNavbar />
+      <Header />
       <About />
       <Features />
       <CTA />
