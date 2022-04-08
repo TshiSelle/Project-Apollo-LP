@@ -1,4 +1,12 @@
+#features{
+    background-color: #31ae;
+}
 
 .feature_container{
-    height: 50vh;
+    height: 75vh;
+}
+
+.features_img{
+    height: 3rem;
+    width: 3rem;
 }
