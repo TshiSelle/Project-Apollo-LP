@@ -1,7 +1,18 @@
-import React from 'react';
+import React from "react";
+import "./features.css";
 
 const MyFeatures = () => {
-  return <h1>Features</h1>;
+  return (
+    <section id='features' >
+      <div class="container text-center feature_container">
+        <div class="row">
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+          <div class="col">Column</div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default MyFeatures;
