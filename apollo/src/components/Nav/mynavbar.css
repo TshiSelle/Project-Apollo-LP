@@ -1,11 +1,11 @@
-.nav{
-    background-color: var(--color-bg);
+.nav {
+  background-color: var(--color-secondary);
 }
 
-.navlink{
-    color:var(--color-primary-variant) !important;
+.navlink {
+  color: var(--color-white) !important;
 }
 
-.navlink:focus{
-    color: var(--color-light) !important;
+.navlink:focus {
+  color: var(--color-primary) !important;
 }
