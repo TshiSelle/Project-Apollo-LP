@@ -1,3 +1,5 @@
+/* Here change the backgroud-color */
+
 #features{
     background-color: #31ae;
 }
@@ -6,7 +8,20 @@
     height: 75vh;
 }
 
+/* Here you can change the image size */
+
 .features_img{
     height: 3rem;
     width: 3rem;
+}
+
+/* Here you can change the h4 size */
+
+.features_col h4{
+
+}
+
+/* Here you can change the p size */
+.features_col p{
+
 }

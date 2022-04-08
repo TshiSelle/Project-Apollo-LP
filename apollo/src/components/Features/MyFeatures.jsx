@@ -12,7 +12,10 @@ const MyFeatures = () => {
             <hr className="w-25 ms-auto me-auto" />
           </div>
 
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div className="col-lg-3 col-md-6 col-sm-12 features_col">
+
+    {/* Change the img src logo to whatever you want and change h4 and p */}
+
             <img
               className="features_img ms-auto me-auto mb-2"
               src={logo}
@@ -21,7 +24,10 @@ const MyFeatures = () => {
             <h4>Sturdy themes</h4>
             <p>Our themes are updated</p>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div className="col-lg-3 col-md-6 col-sm-12 features_col">
+
+    {/* Change the img src logo to whatever you want and change h4 and p */}
+            
             <img
               className="features_img ms-auto me-auto mb-2"
               src={logo}
@@ -30,7 +36,10 @@ const MyFeatures = () => {
             <h4>Sturdy themes</h4>
             <p>Our themes are updated</p>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div className="col-lg-3 col-md-6 col-sm-12 features_col">
+
+    {/* Change the img src logo to whatever you want and change h4 and p */}
+
             <img
               className="features_img ms-auto me-auto mb-2"
               src={logo}
@@ -39,7 +48,10 @@ const MyFeatures = () => {
             <h4>Sturdy themes</h4>
             <p>Our themes are updated</p>
           </div>
-          <div className="col-lg-3 col-md-6 col-sm-12">
+          <div className="col-lg-3 col-md-6 col-sm-12 features_col">
+
+    {/* Change the img src logo to whatever you want and change h4 and p */}
+
             <img
               className="features_img ms-auto me-auto mb-2"
               src={logo}
