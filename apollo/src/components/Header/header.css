@@ -1,6 +1,17 @@
-.container {
-  background-image: url('../../assets/headerImage.webp');
-  width: auto;
+.container__header {
+  align-items: center;
+  background-image: url(../../assets/headerimg.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main'
+    'footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
 }
 
 .title h1 {
@@ -9,4 +20,9 @@
 
 .header__definition p {
   color: var(--color-white);
+}
+
+.header__background {
+  position: absolute;
+  z-index: 0;
 }

@@ -1,11 +1,12 @@
 import React from 'react';
-import MyNavbar from './components/nav/Nav';
-import Header from './components/header/Header';
-import Features from './components/features/Features';
-import Footer from './components/footer/Footer';
-import Contact from './components/contact/Contact';
+import MyNavbar from './components/nav/MyNavBar';
+import Header from './components/header/MyHeader';
+import Features from './components/features/MyFeatures';
+import Footer from './components/footer/MyFooter';
+import Contact from './components/contact/MyContact';
 import CTA from './components/cta/CTA';
-import About from './components/about/About';
+import About from './components/about/MyAbout';
+import '../node_modules/bootstrap/scss/bootstrap';
 
 const App = () => {
   return (
