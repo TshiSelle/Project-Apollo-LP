@@ -12,7 +12,7 @@ function MyNavbar() {
       <Navbar className='nav' fixed='top' expand='lg'>
         <Container>
           <Navbar.Brand className='navlink'>
-            <a href='#home'>
+            <a href='#header'>
               <img src={jslogo} alt='image' className='navimage' />
             </a>
           </Navbar.Brand>
@@ -22,7 +22,7 @@ function MyNavbar() {
           />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='ms-auto'>
-              <Nav.Link className='navlink' href='#home'>
+              <Nav.Link className='navlink' href='#header'>
                 Home
               </Nav.Link>
               <Nav.Link className='navlink' href='#about'>
