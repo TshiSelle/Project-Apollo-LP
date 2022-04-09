@@ -5,7 +5,7 @@
 }
 
 .feature_container{
-    height: 75vh;
+    min-height: 75vh;
 }
 
 /* Here you can change the image size */
@@ -25,3 +25,5 @@
 .features_col p{
 
 }
+
+
