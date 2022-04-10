@@ -36,7 +36,7 @@
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-    color: var(--color-primary);
+    color: white;
   }
   
   .form__field:focus {
@@ -63,6 +63,7 @@
   
   .btn_submit{
     background-color: var(--color-primary);
+    color: white;
   }
   
   
