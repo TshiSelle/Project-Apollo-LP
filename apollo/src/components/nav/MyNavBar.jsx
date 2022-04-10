@@ -7,9 +7,11 @@ import './nav.css';
 import jslogo from '../../assets/javascript-svgrepo-com.svg';
 
 function MyNavbar() {
+
+  
   return (
     <div>
-      <Navbar className='nav' fixed='top' expand='lg'>
+      <Navbar  className="nav"  fixed='top' expand='lg'>
         <Container>
           <Navbar.Brand className='navlink'>
             <a href='#header'>

@@ -1,22 +1,21 @@
-.nav{
+.nav {
   background-color: var(--color-secondary);
 }
 
-.navlink{
-  color:var(--color-white) !important;
+.navlink {
+  color: var(--color-white) !important;
 }
 
-.navlink:focus{
+.navlink:focus {
   color: var(--color-primary) !important;
 }
-.navlink:hover{
+.navlink:hover {
   color: var(--color-primary) !important;
 }
-.navimage{
+.navimage {
   width: 3rem;
   height: 3rem;
 }
-.navcollapse{
-    background-color: yellow !important;
+.navcollapse {
+  background-color: yellow !important;
 }
-
