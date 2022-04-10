@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { React, useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -7,12 +7,17 @@ import './nav.css';
 import jslogo from '../../assets/javascript-svgrepo-com.svg';
 
 function MyNavbar() {
+  const [myNav, setMyNav] = useState('#');
   return (
     <div>
       <Navbar className='nav' fixed='top' expand='lg'>
         <Container>
           <Navbar.Brand className='navlink'>
-            <a href='#header'>
+            <a
+              href='#header'
+              onClick={() => setMyNav('#header')}
+              className={myNav === '#header' ? 'active navlink' : 'navlink'}
+            >
               <img src={jslogo} alt='image' className='navimage' />
             </a>
           </Navbar.Brand>
@@ -22,10 +27,18 @@ function MyNavbar() {
           />
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='ms-auto'>
-              <Nav.Link className='navlink' href='#header'>
+              <Nav.Link
+                href='#header'
+                onClick={() => setMyNav('#header')}
+                className={myNav === '#header ' ? 'active navlink' : 'navlink'}
+              >
                 Home
               </Nav.Link>
-              <Nav.Link className='navlink' href='#about'>
+              <Nav.Link
+                href='#about'
+                onClick={() => setMyNav('#about')}
+                className={myNav === '#about ' ? 'active navlink' : 'navlink'}
+              >
                 About us
               </Nav.Link>
               <Nav.Link className='navlink' href='#features'>

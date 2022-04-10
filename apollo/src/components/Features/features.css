@@ -1,29 +1,28 @@
 /* Here change the backgroud-color */
 
-#features{
-    background-color: #31ae;
+#features {
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 }
 
-.feature_container{
-    min-height: 75vh;
+.feature_container {
+  min-height: 75vh;
 }
 
 /* Here you can change the image size */
 
-.features_img{
-    height: 3rem;
-    width: 3rem;
+.features_img {
+  height: 3rem;
+  width: 3rem;
 }
 
 /* Here you can change the h4 size */
 
-.features_col h4{
-
+.features_col h4 {
+  color: var(--color-white);
 }
 
 /* Here you can change the p size */
-.features_col p{
-
+.features_col p {
+  color: var(--color-white);
 }
-
-

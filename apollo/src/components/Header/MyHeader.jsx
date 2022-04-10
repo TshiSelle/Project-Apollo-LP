@@ -5,7 +5,7 @@ const MyHeader = () => {
   return (
     <section id='header'>
       <div className='container-fluid w-50 d-flex justify-content-center align-items-center test2'>
-        <div className='row  '>
+        <div className='row '>
           <div className='col-lg-12 test'>Welcome to Project Apollo</div>
           <div className='col-lg-12 test'>
             <hr />
@@ -17,7 +17,7 @@ const MyHeader = () => {
             </p>
           </div>
           <div className='col-lg-12 test'>
-            <button className='button-17'> Sign Up</button>
+            <button className='button-17'>Find Out More!</button>
           </div>
         </div>
       </div>
