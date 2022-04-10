@@ -1,6 +1,9 @@
 .nav {
   background-color: var(--color-secondary);
 }
+.nav2 {
+  background-color: transparent;
+}
 
 .navlink {
   color: var(--color-white) !important;

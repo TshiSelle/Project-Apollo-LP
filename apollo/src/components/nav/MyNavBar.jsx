@@ -10,7 +10,7 @@ function MyNavbar() {
   const [myNav, setMyNav] = useState('#');
   return (
     <div>
-      <Navbar className='nav' fixed='top' expand='lg'>
+      <Navbar  className={navcolor ? "nav" : "nav2"}  fixed='top' expand='lg'>
         <Container>
           <Navbar.Brand className='navlink'>
             <a
