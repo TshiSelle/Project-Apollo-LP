@@ -12,17 +12,15 @@ const MyContact = () => {
     if (email == "" || textarea == "") {
       e.preventDefault();
       setMessage("Fields are empty");
-      setVariant('danger');
-      setVariant2('outline-danger')
+      setVariant("danger");
+      setVariant2("outline-danger");
       setShow(true);
-    } 
-    else{
+    } else {
       setMessage("Success");
-      setVariant('success');
-      setVariant2('outline-success')
+      setVariant("success");
+      setVariant2("outline-success");
       setShow(true);
     }
-
   };
 
   const [show, setShow] = useState(false);
@@ -71,7 +69,7 @@ const MyContact = () => {
             Message
           </label>
           <textarea
-          placeholder="Enter your message"
+            placeholder="Enter your message"
             className="form-control"
             id="message"
             name="message"
@@ -85,7 +83,7 @@ const MyContact = () => {
         />
         <button
           type="submit"
-          className="btn btn-primary"
+          className="button-17"
           disabled={state.submitting}
           onClick={handlErrors}
         >

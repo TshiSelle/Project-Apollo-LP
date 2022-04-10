@@ -1,6 +1,6 @@
 #about {
   background-color: whitesmoke;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .astro > img {
@@ -8,5 +8,19 @@
 }
 
 .par > p {
-  font-size: 23px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 875px) {
+  .par > p {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .par > p {
+    font-size: 1rem;
+  }
+
 }

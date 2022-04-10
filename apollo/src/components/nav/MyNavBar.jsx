@@ -29,8 +29,6 @@ function MyNavbar() {
           <Navbar.Brand className='navlink'>
             <a
               href='#header'
-              onClick={() => setMyNav('#header')}
-              className={myNav === '#header' ? 'active navlink' : 'navlink'}
             >
               <img src={jslogo} alt='image' className='navimage' />
             </a>
