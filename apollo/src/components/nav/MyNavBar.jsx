@@ -40,6 +40,7 @@ function MyNavbar() {
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='ms-auto'>
               <Nav.Link
+               href='#header'
                 id='home'
                 onClick={() => setMyNav('#header')}
                 className={myNav === '#header' ? 'active navlink' : 'navlink'}

@@ -75,12 +75,14 @@ const MyContact = () => {
             name="message"
             onChange={(e) => setTextarea(e.target.value)}
           />
+          
         </div>
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
         />
+
         <button
           type="submit"
           className="button-17"
