@@ -1,23 +1,29 @@
-import React from 'react';
+import { React, useState } from 'react';
 import './header.css';
 
 const MyHeader = () => {
+  const [myNav, setMyNav] = useState('#');
   return (
     <section id='header'>
       <div className='container-fluid w-50 d-flex justify-content-center align-items-center test2'>
         <div className='row '>
-          <div className='col-lg-12 test'>Welcome to Project Apollo</div>
           <div className='col-lg-12 test'>
-            <hr />
+            <h2>Welcome to Project Apollo</h2>
+          </div>
+          <div className='col-lg-12 test'>
+            <hr className='w-75 ms-auto me-auto' />
           </div>
           <div className='col-lg-12 test'>
             <p>
-              The House of JavaScript, where the developer community help each
-              other learn and hone their skills
+              Our very first open-database project made specifically to assist
+              the developers community providing documentation, tips, and
+              helpful technical questions using JavaScript.
             </p>
           </div>
           <div className='col-lg-12 test'>
-            <button className='button-17'>Find Out More!</button>
+            <a href='#about'>
+              <button className='button-17'>Find Out More!</button>
+            </a>
           </div>
         </div>
       </div>

@@ -1,7 +1,11 @@
 import React from 'react';
 
 const MyContact = () => {
-  return <h1>Contact Us</h1>;
+  return (
+    <section id='signup'>
+      <h1>Sign up</h1>
+    </section>
+  );
 };
 
 export default MyContact;

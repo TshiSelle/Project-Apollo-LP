@@ -3,6 +3,10 @@
   min-height: 75vh;
 }
 
-.my__about {
-  font-size: px;
+.astro > img {
+  align-self: center;
+}
+
+.par > p {
+  font-size: 23px;
 }

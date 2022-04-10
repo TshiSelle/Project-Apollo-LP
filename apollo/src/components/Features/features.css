@@ -12,17 +12,17 @@
 /* Here you can change the image size */
 
 .features_img {
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 /* Here you can change the h4 size */
 
 .features_col h4 {
-  color: var(--color-white);
+  color: var(--color-secondary);
 }
 
 /* Here you can change the p size */
 .features_col p {
-  color: var(--color-white);
+  color: var(--color-secondary);
 }
