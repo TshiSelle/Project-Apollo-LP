@@ -17,7 +17,7 @@
   height: 3rem;
 }
 .navcollapse {
-  background-color: yellow !important;
+  background-color: var(--color-primary) !important;
 }
 
 .active {
