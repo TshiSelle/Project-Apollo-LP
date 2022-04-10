@@ -21,7 +21,7 @@ const MyHeader = () => {
             </p>
           </div>
           <div className='col-lg-12 test'>
-            <a href='#about'>
+            <a href='#about' className='btn_href'>
               <button className='button-17'>Find Out More!</button>
             </a>
           </div>

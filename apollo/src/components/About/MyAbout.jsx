@@ -25,7 +25,7 @@ const MyAbout = () => {
             </p>
           </div>
           <div className='col-lg-12'>
-            <a href='#signup'>
+            <a href='#signup'  className='btn_href'>
               <button className='button-17' href='#about'>
                 Get Started!
               </button>

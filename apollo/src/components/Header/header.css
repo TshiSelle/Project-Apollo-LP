@@ -117,6 +117,10 @@
   font-size: 1.5rem;
 }
 
+.btn_href{
+  text-decoration: none;
+}
+
 #header {
   background-image: url(../../assets//headerimg.jpg);
   background-position: center center;

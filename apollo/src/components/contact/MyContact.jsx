@@ -9,13 +9,23 @@ const MyContact = () => {
   const [state, handleSubmit] = useForm("xpzbywbl");
 
   const handlErrors = (e) => {
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
     if (email == "" || textarea == "") {
       e.preventDefault();
       setMessage("Fields are empty");
       setVariant("danger");
       setVariant2("outline-danger");
       setShow(true);
-    } else {
+    } 
+    else if(!re.test(email)){
+      e.preventDefault();
+      setMessage("Please enter a correct email format");
+      setVariant("danger");
+      setVariant2("outline-danger");
+      setShow(true);
+    }
+    else {
       setMessage("Success");
       setVariant("success");
       setVariant2("outline-success");
@@ -47,45 +57,41 @@ const MyContact = () => {
               </Button>
             </div>
           </Alert>
-          <label htmlFor="email" className="form-label">
-            Email address
-          </label>
-          <input
-            placeholder="Email"
-            type="email"
-            className="form-control"
-            id="email"
-            name="email"
-            onChange={(e) => setEmail(e.target.value)}
-            aria-describedby="emailHelp"
-          />
-          <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
+
+          <div class="form__group ">
+            <input
+              className="form__field"
+              placeholder="Email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label for="email" className="form__label">
+              Email
+            </label>
           </div>
         </div>
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
+
         <div className="mb-3">
-          <label htmlFor="message" className="form-label">
-            Message
-          </label>
-          <textarea
-            placeholder="Enter your message"
-            className="form-control"
-            id="message"
-            name="message"
-            onChange={(e) => setTextarea(e.target.value)}
-          />
-          
+          <div class="form__group ">
+            <textarea
+              className="form__field"
+              placeholder="Enter your message"
+              id="message"
+              value={textarea}
+              name="message"
+              onChange={(e) => setTextarea(e.target.value)}
+            />
+            <label for="name" class="form__label">
+              Message
+            </label>
+          </div>
         </div>
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
 
         <button
           type="submit"
-          className="button-17"
+          className="button-17 btn_submit"
           disabled={state.submitting}
           onClick={handlErrors}
         >
