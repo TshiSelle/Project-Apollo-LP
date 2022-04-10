@@ -21,6 +21,7 @@ function MyNavbar() {
     // adding the event when scroll change background
     window.addEventListener('scroll', changeBackground);
   });
+
   return (
     <div>
       <Navbar className={navcolor ? 'nav' : 'nav2'} fixed='top' expand='lg'>
@@ -41,23 +42,31 @@ function MyNavbar() {
           <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='ms-auto'>
               <Nav.Link
-                href='#header'
+                id='home'
                 onClick={() => setMyNav('#header')}
-                className={myNav === '#header ' ? 'active navlink' : 'navlink'}
+                className={myNav === '#header' ? 'active navlink' : 'navlink'}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 href='#about'
                 onClick={() => setMyNav('#about')}
-                className={myNav === '#about ' ? 'active navlink' : 'navlink'}
+                className={myNav === '#about' ? 'active navlink' : 'navlink'}
               >
                 About us
               </Nav.Link>
-              <Nav.Link className='navlink' href='#features'>
+              <Nav.Link
+                href='#features'
+                onClick={() => setMyNav('#features')}
+                className={myNav === '#features' ? 'active navlink' : 'navlink'}
+              >
                 Features
               </Nav.Link>
-              <Nav.Link className='navlink' href='#signup'>
+              <Nav.Link
+                href='#signup'
+                onClick={() => setMyNav('#signup')}
+                className={myNav === '#signup' ? 'active navlink' : 'navlink'}
+              >
                 Sign up
               </Nav.Link>
             </Nav>
