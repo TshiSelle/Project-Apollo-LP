@@ -1,9 +1,9 @@
 import React from 'react';
-import MyNavbar from './components/nav/MyNavBar';
+import MyNavbar from './components/Nav/MyNavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import MyHeader from './components/header/MyHeader';
-import MyFeatures from './components/features/MyFeatures';
-import MyAbout from './components/about/MyAbout';
+import MyHeader from './components/Header/MyHeader';
+import MyFeatures from './components/Features/MyFeatures';
+import MyAbout from './components/About/MyAbout';
 
 const App = () => {
   return (

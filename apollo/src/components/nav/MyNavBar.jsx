@@ -1,50 +1,64 @@
-import { React, useState } from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './nav.css';
-import jslogo from '../../assets/javascript-svgrepo-com.svg';
+import { React, useState, useEffect } from "react";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import "./nav.css";
+import jslogo from "../../assets/javascript-svgrepo-com.svg";
 
 function MyNavbar() {
-  const [myNav, setMyNav] = useState('#');
+  const [myNav, setMyNav] = useState("#");
+
+  const [navcolor, setNavcolor] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setNavcolor(true);
+    } else {
+      setNavcolor(false);
+    }
+  };
+  useEffect(() => {
+    changeBackground();
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground);
+  });
   return (
     <div>
-      <Navbar className={navcolor ? 'nav' : 'nav2'} fixed='top' expand='lg'>
+      <Navbar className={navcolor ? "nav" : "nav2"} fixed="top" expand="lg">
         <Container>
-          <Navbar.Brand className='navlink'>
+          <Navbar.Brand className="navlink">
             <a
-              href='#header'
-              onClick={() => setMyNav('#header')}
-              className={myNav === '#header' ? 'active navlink' : 'navlink'}
+              href="#header"
+              onClick={() => setMyNav("#header")}
+              className={myNav === "#header" ? "active navlink" : "navlink"}
             >
-              <img src={jslogo} alt='image' className='navimage' />
+              <img src={jslogo} alt="image" className="navimage" />
             </a>
           </Navbar.Brand>
           <Navbar.Toggle
-            aria-controls='responsive-navbar-nav'
-            className='navcollapse'
+            aria-controls="responsive-navbar-nav"
+            className="navcollapse"
           />
-          <Navbar.Collapse id='responsive-navbar-nav'>
-            <Nav className='ms-auto'>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto">
               <Nav.Link
-                href='#header'
-                onClick={() => setMyNav('#header')}
-                className={myNav === '#header ' ? 'active navlink' : 'navlink'}
+                href="#header"
+                onClick={() => setMyNav("#header")}
+                className={myNav === "#header " ? "active navlink" : "navlink"}
               >
                 Home
               </Nav.Link>
               <Nav.Link
-                href='#about'
-                onClick={() => setMyNav('#about')}
-                className={myNav === '#about ' ? 'active navlink' : 'navlink'}
+                href="#about"
+                onClick={() => setMyNav("#about")}
+                className={myNav === "#about " ? "active navlink" : "navlink"}
               >
                 About us
               </Nav.Link>
-              <Nav.Link className='navlink' href='#features'>
+              <Nav.Link className="navlink" href="#features">
                 Features
               </Nav.Link>
-              <Nav.Link className='navlink' href='#signup'>
+              <Nav.Link className="navlink" href="#signup">
                 Sign up
               </Nav.Link>
             </Nav>
