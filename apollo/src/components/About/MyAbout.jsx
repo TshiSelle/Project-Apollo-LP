@@ -8,7 +8,7 @@ const MyAbout = () => {
       id='about'
       className='d-flex justify-content-center align-items-center'
     >
-      <div className='container text-center w-50  my__about'>
+      <div className='container text-center w-50  my__about pt-5 pb-5'>
         <div className='row w-100 '>
           <div className='col-lg-12 astro'>
             <h1>About Us</h1>

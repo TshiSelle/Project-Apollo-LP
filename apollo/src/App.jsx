@@ -14,7 +14,6 @@ const App = () => {
       <MyHeader />
       <MyAbout />
       <MyFeatures />
-      <SignUp />
       <MyContact/>
     </>
   );

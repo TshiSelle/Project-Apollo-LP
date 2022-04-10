@@ -35,7 +35,7 @@ const MyContact = () => {
   return (
     <section
       id="signup"
-      className="container d-flex justify-content-center align-items-center  text-center"
+      className="container-fluid d-flex justify-content-center align-items-center  text-center w-100"
     >
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
