@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect} from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -7,11 +7,25 @@ import './nav.css';
 import jslogo from '../../assets/javascript-svgrepo-com.svg';
 
 function MyNavbar() {
+  const [navcolor, setNavcolor] = useState(false)
+  const changeBackground = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >= 100) {
+      setNavcolor(true)
+    } else {
+      setNavcolor(false)
+    }
+  }
 
+  useEffect(() => {
+    changeBackground()
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground)
+  })
   
   return (
     <div>
-      <Navbar  className="nav"  fixed='top' expand='lg'>
+      <Navbar  className={navcolor ? "nav" : "nav2"}  fixed='top' expand='lg'>
         <Container>
           <Navbar.Brand className='navlink'>
             <a href='#header'>
