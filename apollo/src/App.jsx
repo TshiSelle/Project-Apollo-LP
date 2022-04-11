@@ -1,10 +1,10 @@
 import React from 'react';
-import MyNavbar from './components/Nav/MyNavBar';
+import MyNavbar from './components/nav/MyNavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyHeader from './components/Header/MyHeader';
 import MyFeatures from './components/Features/MyFeatures';
 import MyAbout from './components/About/MyAbout';
-import MyContact from './components/Contact/MyContact';
+import MyContact from './components/contact/MyContact';
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <MyHeader />
       <MyAbout />
       <MyFeatures />
-      <MyContact/>
+      <MyContact />
     </>
   );
 };
