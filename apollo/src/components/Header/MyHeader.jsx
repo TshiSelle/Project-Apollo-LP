@@ -15,9 +15,9 @@ const MyHeader = () => {
           </div>
           <div className='col-lg-12 test'>
             <p>
-              Our very first open-database project made specifically to assist
-              the developers community providing documentation, tips, and
-              helpful technical questions using JavaScript.
+              Our very first open-database project made for the community of
+              developers. Providing documentation, tips, and helpful technical
+              questions using JavaScript.
             </p>
           </div>
           <div className='col-lg-12 test'>

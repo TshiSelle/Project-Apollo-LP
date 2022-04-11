@@ -18,14 +18,14 @@ const MyAbout = () => {
 
           <div className='col-lg-12 par'>
             <p>
-              We're a developers community determined to support each other in
-              any way possible. Co-working with the AstroLabs community, Project
-              Apollo was born, purposed on storing as much infmoration as
-              developers can collect in one place.
+              We are a community of developers determined to support each other
+              in any way possible. Co-working with the AstroLabs community,
+              Project Apollo was born, with the purpose of storing information
+              developers can access in one place.
             </p>
           </div>
           <div className='col-lg-12'>
-            <a href='#signup'  className='btn_href'>
+            <a href='#signup' className='btn_href'>
               <button className='button-17' href='#about'>
                 Get Started!
               </button>
