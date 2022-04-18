@@ -47,8 +47,8 @@ const MyContact = () => {
       <form onSubmit={handleSubmit}>
         <div className='mb-3'>
           <div style={{ color: 'white' }}>
-            <h1>Sign Up</h1>
-            <hr className='w-50 ms-auto me-auto' />
+            <h1>Sign up to our Beta Test</h1>
+            <hr className='w-75 ms-auto me-auto' />
           </div>
           <Alert show={show} variant={variant}>
             <Alert.Heading>{message}</Alert.Heading>
